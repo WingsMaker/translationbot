@@ -4,7 +4,7 @@ google translation telegram bot
 # Introduction 
 How to create serverless telegram chatbot to perform google translation. (default language : English)
 
-![image](https://github.com/WingsMaker/chatgptbot/assets/32192638/425f9de3-877c-4e57-8488-69e393d988b3)
+![image](https://github.com/WingsMaker/translationbot/assets/32192638/3ab3fae4-0591-4279-b5a9-662600760a90)
 
 
 # Requirements
@@ -16,11 +16,11 @@ How to create serverless telegram chatbot to perform google translation. (defaul
 
 [2] Write the scripts, copy paste from below template url :
 
-https://raw.githubusercontent.com/WingsMaker/chatgptbot/main/imagebot_gas.txt
+https://raw.githubusercontent.com/WingsMaker/translationbot/main/google_translate_gas.txt
 
 [3] Rename the project
 
-Click on the "Untitled project" to rename the project as something else. Example, "My ChatGPT bot".
+Click on the "Untitled project" to rename the project as something else. Example, "GoogleTranslate".
 
 ![image](https://user-images.githubusercontent.com/32192638/209757895-ce873366-3f4b-4063-96ba-1ecb76d07566.png)
 
