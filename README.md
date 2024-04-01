@@ -1,15 +1,21 @@
 # translationbot
 google translation telegram bot
 
+![image](https://github.com/WingsMaker/translationbot/assets/32192638/e5ced06f-4a3c-4655-bed0-757f479943dc)
+<br>
+<hr>
+
 # Introduction 
 How to create serverless telegram chatbot to perform google translation. (default language : English)
 
 ![image](https://github.com/WingsMaker/translationbot/assets/32192638/3478fcc7-fedc-466a-ada2-bf0d29c6c8e4)
+<br>
 
 
 # Requirements
 - Google Gmail account ( where your android playstore account is )
 - Telegram chatbot token, see https://t.me/BotFather
+<br>
 
 # Getting Started - Google App Script Project
 [1] Goto https://script.google.com/home , click "New Project" 
@@ -23,6 +29,7 @@ https://raw.githubusercontent.com/WingsMaker/translationbot/main/google_translat
 Click on the "Untitled project" to rename the project as something else. Example, "GoogleTranslate".
 
 ![image](https://github.com/WingsMaker/translationbot/assets/32192638/3ab3fae4-0591-4279-b5a9-662600760a90)
+<br>
 
 [4] Deploy as google web app
 
@@ -37,11 +44,13 @@ Click on the "Deploy - New Deployment"
 Click "Select type - Web App"
 
 ![image](https://user-images.githubusercontent.com/32192638/209758240-b3d00b5c-09de-4355-be1d-b6193269409f.png)
+<br>
 
 Fill in the form and click "Deploy".
 ( for more see https://www.youtube.com/watch?v=-AlstV1PAaA )
 
 ![image](https://user-images.githubusercontent.com/32192638/209758768-29dda612-80c7-425e-8a39-e3e80d2fe5bc.png)
+<br>
 
 Copy the web app url to the clipboard for later use.
 
