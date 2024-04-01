@@ -1,0 +1,46 @@
+var token = "...."; // your telegram bot token
+var lang_code = "en";
+
+function doPost(e) {
+  var contents = JSON.parse(e.postData.contents);
+  var txt = "";  
+  if (contents.message) {
+    var id = contents.message.from.id;
+    var text = contents.message.text;    
+    if( text.startsWith("/") ) {
+      if( text == "/start" ) {
+        txt = "This is a google translation bot\nExample :\n/zh-TW How to say Thanks You in chinese?"
+      } else {
+        lang_code = text.split(" ")[0].replace("/","");
+        txt = text.replace(lang_code,"").replace("/","").trim();
+        txt = LanguageApp.translate(txt, '', lang_code);
+      }
+      sendMessage(id, txt);
+    } else {
+      txt = LanguageApp.translate(text, '', lang_code);
+      sendMessage(id, txt);
+    }
+    return;
+  }
+}
+
+function sendMessage(id, msg) {
+  var telegramUrl = "https://api.telegram.org/bot" + token + "/";
+  var data = {
+    method: "post",
+    payload: {
+      method: "sendMessage",
+      chat_id: String(id),
+      text: msg,
+      parse_mode: "HTML",
+
+    }
+  };
+  try {
+    var response = UrlFetchApp.fetch( telegramUrl, data);
+    var resp = response.getContentText().toString();
+  } 
+  catch ( e ) {
+    return ;
+  }
+}
