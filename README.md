@@ -69,11 +69,9 @@ Change the value of statement, paste the bot token into here.
 
 var token = "__replace_here__";
 
-[7] Save the script and REDO the deployment process in step 4 
+Save the project.
 
-since the code has been changed, need to update the value of webappUrl in [6].
-
-[9] Run the "start_bot" function for only once to make sure actual telegram bot able to callback this google web app.
+[7] Run the "start_bot" function for only once to make sure actual telegram bot able to callback this google web app.
 
 ![image](https://github.com/WingsMaker/chatgptbot/assets/32192638/416ecbda-30bb-4d63-adb3-d3a24da7822f)
 
