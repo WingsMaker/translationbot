@@ -69,17 +69,9 @@ Change the value of statement, paste the bot token into here.
 
 var token = "__replace_here__";
 
-[7] Update the values of apiKey in the script.
+[7] Save the script and REDO the deployment process in step 4 
 
-The api secret key for Chat GPT is located in the My Apps page of your Chat GPT dashboard.
-( for more see https://www.youtube.com/watch?v=DFmmiYlbgX0 )
-Change the value of statement, paste the api secret key into here.
-
-var apiKey = "__replace_here__";
-
-[8] Save the script and REDO the deployment process in step 4 
-
-since the code has been changed, need to update the value of webappUrl in [7].
+since the code has been changed, need to update the value of webappUrl in [6].
 
 [9] Run the "start_bot" function for only once to make sure actual telegram bot able to callback this google web app.
 
