@@ -1,4 +1,5 @@
 var token = "...."; // your telegram bot token
+var weburi = "...."; // your google web app uri 
 var lang_code = "en";
 
 function doPost(e) {
@@ -43,4 +44,27 @@ function sendMessage(id, msg) {
   catch ( e ) {
     return ;
   }
+}
+
+function bot_info() {
+  var url = "https://api.telegram.org/bot" + token + "/getWebhookInfo";  
+  var response = UrlFetchApp.fetch(url);
+  var resp = response.getContentText().toString();
+  Logger.log(response);
+  return response;
+}
+
+function start_bot() {
+  var telegramUrl = "https://api.telegram.org/bot" + token;
+  var url = telegramUrl + "/setWebhook?url=https://script.google.com/macros/s/" + weburi  + "/exec";
+  var response = UrlFetchApp.fetch(url);  
+  Logger.log(response);
+  return response;
+}
+
+function stop_bot() {
+  var url = "https://api.telegram.org/bot" + token + "/deleteWebhook";
+  var response = UrlFetchApp.fetch(url);
+  Logger.log(response);
+  return response;
 }
